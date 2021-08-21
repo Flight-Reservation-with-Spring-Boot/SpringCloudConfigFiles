@@ -7,10 +7,6 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: CustomerModule
-        uri: http://localhost:8091/
-        predicates:
-        - Path=/customer/**
       - id: ReservationModule
         url: http://localhost:8092/
         predicates:
